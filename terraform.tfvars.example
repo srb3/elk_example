@@ -1,0 +1,23 @@
+gcp_project = ""
+gcp_region = ""
+
+tag_contact = ""
+tag_dept = ""
+tag_name = ""
+tag_project = ""
+
+monitoring_count = 1
+
+cluster_ssh_public_key = ""
+cluster_ssh_private_key = ""
+
+external_source_ranges = []
+internal_source_ranges = ["10.0.1.0/24"]
+
+enable_nat = true
+monitoring_instance_type = "n2-standard-2"
+
+elasticsearch_heap = "3"
+logstash_heap = "1"
+
+network_to_peer_with = ""
