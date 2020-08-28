@@ -127,7 +127,7 @@ variable "monitoring_instance_group" {
 variable "monitoring_tags" {
   description = "A list of network tags to assign to this host"
   type        = list(string)
-  default     = ["base", "grafana", "influxdb"]
+  default     = ["base", "kibana", "logstash"]
 }
 
 variable "monitoring_pub_ip" {

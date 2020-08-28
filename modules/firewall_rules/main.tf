@@ -12,27 +12,27 @@ locals {
         }
       ]
     },
-    grafana = {
+    kibana = {
       action  = "allow"
       source_tags = []
       source_ranges  = var.external_source_ranges
-      target_tags = ["influxdb"]
+      target_tags = ["kibana"]
       rules   = [
         {
           protocol = "tcp"
-          ports    = ["3000","5601"]
+          ports    = ["5601"]
         }
       ]
     },
-    influxdb = {
+    logstash = {
       action  = "allow"
       source_tags = []
       source_ranges  = var.internal_source_ranges
-      target_tags = ["influxdb"]
+      target_tags = ["logstash"]
       rules   = [
         {
           protocol = "tcp"
-          ports = ["8086","8088","8080","3128"]
+          ports = ["8080"]
         }
       ]
     }

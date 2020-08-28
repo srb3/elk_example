@@ -31,6 +31,13 @@ EOF
 
 function logstash_config() {
 
+  if [[ ! -d /var/log/data-feed ]]; then
+    mkdir -p /var/log/data-feed
+  fi
+
+  chown -R logstash:logstash /var/log/data-feed
+
+
   if [[ ! -d /var/log/logstash ]]; then
     mkdir -p /var/log/logstash
   fi

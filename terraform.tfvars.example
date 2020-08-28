@@ -15,7 +15,10 @@ external_source_ranges = []
 internal_source_ranges = ["10.0.1.0/24"]
 
 enable_nat = true
+
 monitoring_instance_type = "n2-standard-2"
+monitoring_volume_size = "100"
+monitoring_volume_type = "pd-ssd"
 
 elasticsearch_heap = "3"
 logstash_heap = "1"
